@@ -17,7 +17,7 @@ function statement(invoice) {
         result += getAccountLine(play.playId, play.audience, thisAmount, billFormat);
     }
 
-    result = getTotalAccount(totalAmount, volumeCredits, billFormat);
+    result += getTotalAccount(totalAmount, volumeCredits, billFormat);
 
     return result;
 }
